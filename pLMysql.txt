@@ -1,0 +1,25 @@
+
+    mysql> create procedure GetAllInstructors()
+    -> BEGIN
+    -> select * from instructor;
+    -> END
+    -> @@
+
+    mysql> CALL GetAllInstructors();
+    -> @@
+
+   
+   
+    create table instructor(instructorid varchar(30) primary key,instructorname varchar(50));
+
+    CREATE PROCEDURE `GetAllInstructorsNamesEndsWithId` ()
+    BEGIN
+    select instructorname from instructor where instructorname like '%i';
+    END
+
+  ->> Apply
+ 
+
+
+1. drop procedure procedurname
+   @@
